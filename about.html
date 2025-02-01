@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Floating Navbar with Big Text and Red Blob</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .glowing-blob {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 0, 0, 0.5);
+            border-radius: 50%;
+            filter: blur(100px);
+            transform: translate(-50%, -50%);
+        }
+        .glowing-blob-small {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 0, 0, 0.5);
+            border-radius: 50%;
+            filter: blur(50px);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="bg-black h-screen relative font-roboto">
+    <div class="glowing-blob"></div>
+    <nav class="fixed top-0 left-0 w-full bg-red-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center h-16">
+                <div class="hidden md:block mx-auto mt-4">
+                    <a href="Home.html" class="text-gray-300 hover:bg-red-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:bg-red-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="Index.html" class="text-gray-300 hover:bg-red-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Learn CPR</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="flex items-center justify-start h-full pl-8 md:pl-16">
+        <div>
+            <h1 class="text-white text-6xl md:text-9xl font-bold">About me</h1>
+            <hr class="w-1/2 border-t-2 border-white mt-4">
+        </div>
+    </div>
+    <div class="flex items-center justify-center h-full mt-16 relative">
+        <div class="glowing-blob-small"></div>
+        <p class="text-white text-lg md:text-2xl max-w-3xl leading-relaxed relative text-center mt-16 opacity-80 font-light">
+            I am Vivaan, a 13-year-old living in Texas, USA. I love coding and programming. As a programmer, I see the world differently; I just know how everything works, like I just got some power from a mythic god :) I love people. I am an extrovert and I love to go out and explore. I would love to visit Greece someday, and when I am not coding, I would be reading a book, learning something new, going hiking, or trying out recipes in the kitchen. That was a little something about me!
+        </p>
+    </div>
+</body>
+</html>
